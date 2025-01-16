@@ -1,0 +1,207 @@
+/* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стили для фона и базового цветового оформления */
+body {
+    background: linear-gradient(135deg, #1e2a47, #2b3a5e);
+    color: #fff;
+    line-height: 1.6;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+/* Контейнер для центровки и ограничения ширины */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+header {
+    background-color: #1c1c1c;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #f4b400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    animation: slideIn 1s ease-out forwards;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Эффект появления заголовка */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Навигация */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f4b400;
+    transform: scale(1.1);
+}
+
+/* Разделы контента */
+h2 {
+    color: #f4b400;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Описание игры */
+.game-description {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.game-description p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.game-description .game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.game-description .game-image:hover {
+    transform: scale(1.05);
+}
+
+/* Новости */
+.news {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news article {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.news article h3 {
+    font-size: 1.8rem;
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+.news article p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.news article a {
+    color: #f4b400;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news article a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Кнопка */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f4b400;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #d49e00;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+    color: #888;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem
